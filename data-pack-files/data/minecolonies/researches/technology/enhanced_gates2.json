@@ -1,0 +1,35 @@
+﻿{
+  "branch": "minecolonies:technology",
+  "effects": [
+    {
+      "minecolonies:effects/enhancesgatedurabilityaddition": 2
+    }
+  ],
+  "icon": "minecolonies:gate_iron",
+  "parentResearch": "minecolonies:technology/enhanced_gates1",
+  "requirements": [
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:lily_of_the_valley"]
+      },
+      "quantity": 20
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:cornflower"]
+      },
+      "quantity": 48
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:red_tulip"]
+      },
+      "quantity": 24
+    }
+  ],
+  "researchLevel": 4
+}
+

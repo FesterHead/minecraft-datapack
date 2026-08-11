@@ -1,0 +1,25 @@
+﻿{
+  "branch": "minecolonies:civilian",
+  "effects": [
+    {
+      "minecolonies:effects/growthmultiplier": 4
+    }
+  ],
+  "icon": "minecolonies:textures/icons/research/childgrowth4.png",
+  "parentResearch": "minecolonies:civilian/puberty",
+  "requirements": [
+    {
+      "building": "library",
+      "level": 5
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:red_tulip"]
+      },
+      "quantity": 40
+    }
+  ],
+  "researchLevel": 5
+}
+

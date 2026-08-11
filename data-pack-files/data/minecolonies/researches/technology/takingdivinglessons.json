@@ -1,0 +1,40 @@
+﻿{
+  "branch": "minecolonies:technology",
+  "effects": [
+    {
+      "minecolonies:effects/plantationsea": 1
+    }
+  ],
+  "icon": "minecraft:kelp",
+  "parentResearch": "minecolonies:technology/letitgrow",
+  "requirements": [
+    {
+      "building": "plantation",
+      "level": 2
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:red_tulip"]
+      },
+      "quantity": 36
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:dandelion"]
+      },
+      "quantity": 15
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:dandelion"]
+      },
+      "quantity": 9
+    }
+  ],
+  "researchLevel": 3,
+  "subtitle": "com.minecolonies.research.technology.takingdivinglessons.subtitle"
+}
+

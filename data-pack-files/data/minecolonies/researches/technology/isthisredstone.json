@@ -1,0 +1,21 @@
+﻿{
+  "branch": "minecolonies:technology",
+  "effects": [
+    {
+      "minecolonies:effects/blockbreakspeedmultiplier": 1
+    }
+  ],
+  "icon": "minecraft:redstone",
+  "parentResearch": "minecolonies:technology/hot",
+  "requirements": [
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:allium"]
+      },
+      "quantity": 8
+    }
+  ],
+  "researchLevel": 2
+}
+

@@ -1,0 +1,25 @@
+﻿{
+  "branch": "minecolonies:technology",
+  "effects": [
+    {
+      "minecolonies:effects/blockhutcrusher": 1
+    }
+  ],
+  "icon": "minecolonies:blockhutcrusher",
+  "parentResearch": "minecolonies:technology/stonecake",
+  "requirements": [
+    {
+      "building": "stonemason",
+      "level": 1
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:white_tulip"]
+      },
+      "quantity": 22
+    }
+  ],
+  "researchLevel": 2
+}
+

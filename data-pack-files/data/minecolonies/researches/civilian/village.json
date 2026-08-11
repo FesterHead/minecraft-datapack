@@ -1,0 +1,25 @@
+﻿{
+  "branch": "minecolonies:civilian",
+  "effects": [
+    {
+      "minecolonies:effects/citizencapaddition": 4
+    }
+  ],
+  "icon": "minecolonies:blockhutcitizen:100",
+  "parentResearch": "minecolonies:civilian/hamlet",
+  "requirements": [
+    {
+      "building": "townhall",
+      "level": 4
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:lily_of_the_valley"]
+      },
+      "quantity": 8
+    }
+  ],
+  "researchLevel": 4
+}
+

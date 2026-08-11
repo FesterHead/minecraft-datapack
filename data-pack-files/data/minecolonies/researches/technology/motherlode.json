@@ -1,0 +1,21 @@
+﻿{
+  "branch": "minecolonies:technology",
+  "effects": [
+    {
+      "minecolonies:effects/moreoresmultiplier": 5
+    }
+  ],
+  "icon": "minecraft:diamond_block",
+  "parentResearch": "minecolonies:technology/amazingveins",
+  "requirements": [
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:allium"]
+      },
+      "quantity": 66
+    }
+  ],
+  "researchLevel": 6
+}
+

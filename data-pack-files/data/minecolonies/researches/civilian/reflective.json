@@ -1,0 +1,26 @@
+﻿{
+  "branch": "minecolonies:civilian",
+  "effects": [
+    {
+      "minecolonies:effects/levelingmultiplier": 4
+    }
+  ],
+  "icon": "minecraft:experience_bottle:4",
+  "parentResearch": "minecolonies:civilian/scholarly",
+  "requirements": [
+    {
+      "building": "library",
+      "level": 5
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:pink_tulip"]
+      },
+      "quantity": 55
+    }
+  ],
+  "researchLevel": 5,
+  "subtitle": "com.minecolonies.research.civilian.reflective.subtitle"
+}
+

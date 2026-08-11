@@ -1,0 +1,26 @@
+﻿{
+  "branch": "minecolonies:combat",
+  "effects": [
+    {
+      "minecolonies:effects/fleeingdamagemultiplier": 3
+    }
+  ],
+  "icon": "minecraft:golden_boots",
+  "parentResearch": "minecolonies:combat/fear",
+  "requirements": [
+    {
+      "building": "guardtower",
+      "level": 12
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:orange_tulip"]
+      },
+      "quantity": 50
+    }
+  ],
+  "researchLevel": 5,
+  "subtitle": "com.minecolonies.research.combat.retreat.subtitle"
+}
+

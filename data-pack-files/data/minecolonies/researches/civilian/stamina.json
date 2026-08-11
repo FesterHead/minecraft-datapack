@@ -1,0 +1,21 @@
+﻿{
+  "branch": "minecolonies:civilian",
+  "effects": [
+    {
+      "minecolonies:effects/blockhuthospital": 1
+    }
+  ],
+  "exclusiveChildResearch": true,
+  "icon": "minecolonies:blockhuthospital",
+  "requirements": [
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:lily_of_the_valley"]
+      },
+      "quantity": 2
+    }
+  ],
+  "researchLevel": 1
+}
+

@@ -1,0 +1,37 @@
+﻿{
+  "branch": "minecolonies:technology",
+  "effects": [
+    {
+      "minecolonies:effects/plantationnether": 1
+    }
+  ],
+  "icon": "minecraft:crimson_fungus",
+  "parentResearch": "minecolonies:technology/croprotation",
+  "requirements": [
+    {
+      "building": "plantation",
+      "level": 3
+    },
+    {
+      "building": "netherworker",
+      "level": 3
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:cornflower"]
+      },
+      "quantity": 44
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:cornflower"]
+      },
+      "quantity": 28
+    }
+  ],
+  "researchLevel": 4,
+  "subtitle": "com.minecolonies.research.technology.gargamel.subtitle"
+}
+

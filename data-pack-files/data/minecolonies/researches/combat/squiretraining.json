@@ -1,0 +1,26 @@
+﻿{
+  "branch": "minecolonies:combat",
+  "effects": [
+    {
+      "minecolonies:effects/blockattacksmultiplier": 1
+    }
+  ],
+  "icon": "minecraft:iron_ingot",
+  "parentResearch": "minecolonies:combat/improvedswords",
+  "requirements": [
+    {
+      "building": "combatacademy",
+      "level": 3
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:pink_tulip"]
+      },
+      "quantity": 33
+    }
+  ],
+  "researchLevel": 3,
+  "subtitle": "com.minecolonies.research.combat.squiretraining.subtitle"
+}
+

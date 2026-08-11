@@ -1,0 +1,25 @@
+﻿{
+  "branch": "minecolonies:technology",
+  "effects": [
+    {
+      "minecolonies:effects/blockplacespeedmultiplier": 1
+    }
+  ],
+  "icon": "minecraft:glowstone_dust",
+  "parentResearch": "minecolonies:technology/hittingiron",
+  "requirements": [
+    {
+      "building": "miner",
+      "level": 1
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:white_tulip"]
+      },
+      "quantity": 24
+    }
+  ],
+  "researchLevel": 2
+}
+

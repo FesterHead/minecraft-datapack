@@ -1,0 +1,25 @@
+﻿{
+  "branch": "minecolonies:civilian",
+  "effects": [
+    {
+      "minecolonies:effects/regenerationmultiplier": 1
+    }
+  ],
+  "icon": "minecolonies:textures/icons/research/regeneration1.png",
+  "parentResearch": "minecolonies:civilian/stamina",
+  "requirements": [
+    {
+      "building": "library",
+      "level": 2
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:white_tulip"]
+      },
+      "quantity": 4
+    }
+  ],
+  "researchLevel": 2
+}
+

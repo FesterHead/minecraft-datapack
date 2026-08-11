@@ -1,0 +1,26 @@
+﻿{
+  "branch": "minecolonies:combat",
+  "effects": [
+    {
+      "minecolonies:effects/blockhutcombatacademy": 1
+    }
+  ],
+  "icon": "minecolonies:blockhutcombatacademy",
+  "parentResearch": "minecolonies:combat/tactictraining",
+  "requirements": [
+    {
+      "building": "barracks",
+      "level": 3
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:pink_tulip"]
+      },
+      "quantity": 22
+    }
+  ],
+  "researchLevel": 2,
+  "subtitle": "com.minecolonies.research.combat.improvedswords.subtitle"
+}
+

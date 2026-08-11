@@ -1,0 +1,29 @@
+﻿{
+  "branch": "minecolonies:combat",
+  "effects": [
+    {
+      "minecolonies:effects/platearmorunlock": 1
+    }
+  ],
+  "icon": "minecolonies:plate_armor_helmet",
+  "parentResearch": "minecolonies:combat/ironarmor",
+  "requirements": [
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:red_tulip"]
+      },
+      "quantity": 15
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:oxeye_daisy"]
+      },
+      "quantity": 45
+    }
+  ],
+  "researchLevel": 5,
+  "sortOrder": 2
+}
+

@@ -1,0 +1,27 @@
+﻿{
+  "branch": "minecolonies:technology",
+  "effects": [
+    {
+      "minecolonies:effects/buildermodeunlock": 1
+    }
+  ],
+  "icon": "minecolonies:blockhutbuilder",
+  "parentResearch": "minecolonies:technology/memoryaid",
+  "requirements": [
+    {
+      "building": "builder",
+      "level": 3
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:oxeye_daisy"]
+      },
+      "quantity": 15
+    }
+  ],
+  "researchLevel": 3,
+  "sortOrder": 3,
+  "subtitle": "com.minecolonies.research.technology.buildermodes.subtitle"
+}
+

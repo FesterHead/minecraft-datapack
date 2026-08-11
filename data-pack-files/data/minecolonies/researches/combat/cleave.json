@@ -1,0 +1,25 @@
+﻿{
+  "branch": "minecolonies:combat",
+  "effects": [
+    {
+      "minecolonies:effects/meleedamageaddition": 3
+    }
+  ],
+  "icon": "minecraft:iron_sword",
+  "parentResearch": "minecolonies:combat/powerattack",
+  "requirements": [
+    {
+      "building": "guardtower",
+      "level": 10
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:allium"]
+      },
+      "quantity": 24
+    }
+  ],
+  "researchLevel": 4
+}
+

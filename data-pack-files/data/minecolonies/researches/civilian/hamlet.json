@@ -1,0 +1,25 @@
+﻿{
+  "branch": "minecolonies:civilian",
+  "effects": [
+    {
+      "minecolonies:effects/citizencapaddition": 3
+    }
+  ],
+  "icon": "minecolonies:blockhutcitizen:75",
+  "parentResearch": "minecolonies:civilian/outpost",
+  "requirements": [
+    {
+      "building": "residence",
+      "level": 5
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:poppy"]
+      },
+      "quantity": 36
+    }
+  ],
+  "researchLevel": 3
+}
+

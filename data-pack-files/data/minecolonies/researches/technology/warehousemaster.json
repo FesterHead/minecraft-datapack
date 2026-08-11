@@ -1,0 +1,27 @@
+﻿{
+  "branch": "minecolonies:technology",
+  "effects": [
+    {
+      "minecolonies:effects/recipemodeunlock": 1
+    }
+  ],
+  "icon": "minecolonies:blockminecoloniesrack",
+  "parentResearch": "minecolonies:technology/memoryaid",
+  "requirements": [
+    {
+      "building": "sawmill",
+      "level": 3
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:red_tulip"]
+      },
+      "quantity": 24
+    }
+  ],
+  "researchLevel": 3,
+  "sortOrder": 2,
+  "subtitle": "com.minecolonies.research.technology.warehousemaster.subtitle"
+}
+

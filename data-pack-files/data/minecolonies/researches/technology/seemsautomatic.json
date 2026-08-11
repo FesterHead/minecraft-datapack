@@ -1,0 +1,26 @@
+﻿{
+  "branch": "minecolonies:technology",
+  "effects": [
+    {
+      "minecolonies:effects/blockplacespeedmultiplier": 4
+    }
+  ],
+  "icon": "minecraft:blaze_powder",
+  "parentResearch": "minecolonies:technology/tools",
+  "requirements": [
+    {
+      "building": "blacksmith",
+      "level": 5
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:allium"]
+      },
+      "quantity": 40
+    }
+  ],
+  "researchLevel": 5,
+  "subtitle": "com.minecolonies.research.technology.seemsautomatic.subtitle"
+}
+

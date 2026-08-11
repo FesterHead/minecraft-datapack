@@ -1,0 +1,33 @@
+﻿{
+  "branch": "minecolonies:technology",
+  "effects": [
+    {
+      "minecolonies:effects/plantationlarge": 1
+    }
+  ],
+  "icon": "minecraft:green_dye",
+  "parentResearch": "minecolonies:technology/letitgrow",
+  "requirements": [
+    {
+      "building": "plantation",
+      "level": 3
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:oxeye_daisy"]
+      },
+      "quantity": 33
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:lily_of_the_valley"]
+      },
+      "quantity": 36
+    }
+  ],
+  "researchLevel": 3,
+  "subtitle": "com.minecolonies.research.technology.croprotation.subtitle"
+}
+

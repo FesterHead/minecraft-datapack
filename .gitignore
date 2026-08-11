@@ -1,0 +1,9 @@
+# Local Environment
+.env
+
+# Ignore built releases in the releases folder
+releases/*.zip
+
+# Ignore external mod backups and extracted folders in the backups folder
+backups/*
+!backups/README.md

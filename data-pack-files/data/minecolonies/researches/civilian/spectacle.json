@@ -1,0 +1,25 @@
+﻿{
+  "branch": "minecolonies:civilian",
+  "effects": [
+    {
+      "minecolonies:effects/happinessmultiplier": 3
+    }
+  ],
+  "icon": "minecolonies:textures/icons/research/happy3.png",
+  "parentResearch": "minecolonies:civilian/festival",
+  "requirements": [
+    {
+      "building": "cook",
+      "level": 4
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:orange_tulip"]
+      },
+      "quantity": 48
+    }
+  ],
+  "researchLevel": 4
+}
+

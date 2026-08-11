@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:planks",
+    "#minecraft:wooden_slabs",
+    "minecraft:stone",
+    "minecraft:stone_slab",
+    "minecraft:cobblestone",
+    "minecraft:cobblestone_slab",
+    "minecraft:andesite",
+    "minecraft:andesite_slab",
+    "minecraft:granite",
+    "minecraft:granite_slab",
+    "minecraft:diorite",
+    "minecraft:diorite_slab",
+    "minecraft:blackstone",
+    "minecraft:blackstone_slab",
+    "minecraft:deepslate",
+    "minecraft:cobbled_deepslate",
+    "minecraft:cobbled_deepslate_slab"
+  ]
+}

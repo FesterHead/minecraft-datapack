@@ -1,0 +1,26 @@
+﻿{
+  "branch": "minecolonies:technology",
+  "effects": [
+    {
+      "minecolonies:effects/minimumstockmultiplier": 3
+    }
+  ],
+  "icon": "minecraft:ender_chest",
+  "parentResearch": "minecolonies:technology/capacity",
+  "requirements": [
+    {
+      "building": "miner",
+      "level": 5
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:cornflower"]
+      },
+      "quantity": 50
+    }
+  ],
+  "researchLevel": 5,
+  "subtitle": "com.minecolonies.research.technology.fullstock.subtitle"
+}
+

@@ -1,0 +1,40 @@
+﻿{
+  "branch": "minecolonies:combat",
+  "effects": [
+    {
+      "minecolonies:effects/knighttauntmobsunlock": 1
+    }
+  ],
+  "icon": "minecraft:chain",
+  "requirements": [
+    {
+      "building": "guardtower",
+      "level": 1
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:orange_tulip"]
+      },
+      "quantity": 11
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:pink_tulip"]
+      },
+      "quantity": 4
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:pink_tulip"]
+      },
+      "quantity": 9
+    }
+  ],
+  "researchLevel": 1,
+  "sortOrder": 5,
+  "subtitle": "com.minecolonies.research.combat.taunt.subtitle"
+}
+

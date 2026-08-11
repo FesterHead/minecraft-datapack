@@ -1,0 +1,116 @@
+# Minecraft 1.19.2 Datapack AI Rules
+
+You are Antigravity, a coding assistant working in this workspace. When helping with this project, you must strictly follow these instructions, rules, and guidelines.
+
+---
+
+## 1. Project Specifications
+
+- **Minecraft Version**: `1.19.2`
+- **Minecraft Forge Version**: `43.5.2`
+- **Datapack Format**: `pack_format: 10` (Specified in [pack.mcmeta](file:///e:/Projects/minecraft-datapack/data-pack-files/pack.mcmeta))
+- **Target Audience**: Tweaks for world generation, recipe conversions, and MineColonies helpers for Minecraft Java Edition.
+
+---
+
+## 2. Directory Layout
+
+- [data-pack-files/](file:///e:/Projects/minecraft-datapack/data-pack-files): The raw source files for the datapack. When packaged or loaded, the contents of this folder reside at the root level of the datapack.
+  - [pack.mcmeta](file:///e:/Projects/minecraft-datapack/data-pack-files/pack.mcmeta): Datapack metadata.
+  - `pack.jpg` / `pack.png`: Datapack icon image.
+  - [data/](file:///e:/Projects/minecraft-datapack/data-pack-files/data): The namespace directories.
+    - [festerhead/](file:///e:/Projects/minecraft-datapack/data-pack-files/data/festerhead): Custom user namespace containing recipes.
+    - [minecolonies/](file:///e:/Projects/minecraft-datapack/data-pack-files/data/minecolonies): Custom MineColonies tweaks (researches, citizen names, worldgen structures).
+    - [minecraft/](file:///e:/Projects/minecraft-datapack/data-pack-files/data/minecraft): Vanilla overrides (configured/placed worldgen features).
+    - [forge/](file:///e:/Projects/minecraft-datapack/data-pack-files/data/forge): Forge overrides (item tags, etc.).
+- [releases/](file:///e:/Projects/minecraft-datapack/releases): Folder where built release ZIP files are output. (Ignored by Git, except for documentation).
+- [backups/](file:///e:/Projects/minecraft-datapack/backups): Backup JAR files of original mod assets (Ignored by Git).
+
+---
+
+## 3. Formatting & Code Conventions
+
+- **JSON Files**:
+  - Use **2 spaces** indentation.
+  - Do not use comments (JSON doesn't support them natively, and Minecraft's parser will fail).
+  - Ensure all keys and string values use valid Minecraft/Forge namespaces (e.g. `minecraft:`, `minecolonies:`, `forge:`).
+- **Versioning**:
+  - Always read/update versions using [versioning.properties](file:///e:/Projects/minecraft-datapack/versioning.properties).
+  - Only increment the version when explicitly prompted by the user to do so.
+- **Python Scripts**:
+  - Maintain and run [package_datapack.py](file:///e:/Projects/minecraft-datapack/package_datapack.py) to compile releases.
+
+---
+
+## 4. Minecraft & Mod Specific Rules
+
+### A. MineColonies Tweaks
+
+- **Citizen Names** ([data/minecolonies/citizennames/default.json](file:///e:/Projects/minecraft-datapack/data-pack-files/data/minecolonies/citizennames)):
+  - Must be sorted alphabetically.
+  - Formatted to Title Case, with correct capitalization support for special prefix names (e.g. `O'`, `Mc`).
+  - Contains Census-based collections of 1,500 male, 1,500 female, and 5,000 last names.
+- **Research Upgrade Files** ([data/minecolonies/researches/](file:///e:/Projects/minecraft-datapack/data-pack-files/data/minecolonies/researches)):
+  - Requirement items must use a randomly selected Minecraft 1.19.2 small flower (excluding wither rose).
+  - Required quantity calculation: `(random roll from 1 to 12) * researchLevel`.
+  - Original building requirements must be preserved.
+- **Colonies Generation**:
+  - Empty colonies and nether colonies are disabled by clearing the `structures` list and increasing placement spacing/separation values to maximum.
+
+### B. World Generation Configs
+
+- **Vanilla Overrides** ([data/minecraft/worldgen/](file:///e:/Projects/minecraft-datapack/data-pack-files/data/minecraft/worldgen)):
+  - Target structures and features must comply with Minecraft 1.19.2 schema.
+  - **Mineshafts**: Decreased generation frequency in the world by 40x.
+  - **Surface Lava Lakes**: Decreased chance to 1-in-a-million (5,000x rarer than default).
+  - **Grass & Ferns**: Tall grass/ferns disabled by setting placement counts to 0. Regular grass density reduced and updated to use noise-based density check & `MOTION_BLOCKING` heightmaps.
+  - **Ores**:
+    - Increase all ore generation counts by 5x (simple count and weighted distributions) in placed features.
+    - Ores must generate exposed to air (`discard_chance_on_air_exposure: 0.0`) in configured features.
+    - Spawning height ranges: Overworld ores configured from `-64 to 320`, Nether ores configured from `0 to 128`.
+    - Infested ore (silverfish) generation is disabled (placement count `0`).
+  - **Trees**:
+    - Scale trunk height by 25% and foliage spread by 20% for configured tree features.
+    - Maintain a minimum 3-block clearance at the bottom of the trunk.
+
+---
+
+## 5. Development Workflow
+
+1. **Changing Version / Releasing**:
+   - Update version info in [versioning.properties](file:///e:/Projects/minecraft-datapack/versioning.properties).
+   - Update [CHANGELOG.md](file:///e:/Projects/minecraft-datapack/CHANGELOG.md) using the "Keep a Changelog" format (Added, Changed, Deprecated, Removed, Fixed, Security).
+   - Run the package script `python package_datapack.py` to create the release ZIP in `releases/`.
+
+2. **Referencing Original Assets**:
+   - The original assets for MineColonies are extracted inside [backups/minecolonies-extracted/](file:///e:/Projects/minecraft-datapack/backups/minecolonies-extracted), and the full vanilla 1.19.2 data assets are located inside [backups/vanilla-1.19.2/](file:///e:/Projects/minecraft-datapack/backups/vanilla-1.19.2) for reference and comparison.
+   - Always consult these folders before designing or modifying datapack overrides to ensure directory structures, namespaces, file names, schemas, and default values are 100% correct.
+   - All these files (and any source JARs) reside inside the [backups/](file:///e:/Projects/minecraft-datapack/backups) folder, which is configured in `.gitignore` to prevent committing them to the repository.
+
+---
+
+## 6. Git & Source Control Workflow
+
+**Git Status & Commits**:
+
+- Never commit local environments (`.env`), backups (`backups/*.jar`), or compiled zip packages (`releases/*.zip`).
+- When creating or editing files, document them in `CHANGELOG.md` immediately.
+- **Commit Automation**: You are explicitly responsible for generating commit messages when triggered by the IDE's source control hooks.
+- **Message Format**: Follow the **Conventional Commits specification** precisely (`feat:`, `fix:`, `refactor:`, `docs:`, `chore:`).
+- Provide a clear, high-level structural summary line under 50 characters, a blank line, and then bulleted details if significant architectural changes or dependencies are touched.
+
+---
+
+## 7. Terminal Execution Protocol (Anti-Hang Measures)
+
+- **The Stream-Exit Rule**: Always enforce non-interactive modes for background executions so the IDE receives an immediate End-Of-File (EOF) termination signal.
+- Append auto-bypass flags (`--yes`, `--force`, `--non-interactive`) where applicable.
+- For Python scripts, run them using `python <script>`. Only use `cmd /c` when running legacy Command Prompt specific utilities or commands.
+
+---
+
+## 8. Build Artifact Handling Protocol
+
+- **Automatic Cleanup**: Delete only temporary or intermediate build files in the workspace root. Do NOT delete the final packaged zip files located in the [releases/](file:///e:/Projects/minecraft-datapack/releases) directory.
+- **Persistence**: Never leave intermediate or final package files in the project root. Move/generate them immediately in their designated persistent storage locations (e.g., `releases/`) and then remove any temporary working copies from the root.
+- **Workspace Tidiness**: Ensure the workspace is returned to a clean state after every modification cycle.

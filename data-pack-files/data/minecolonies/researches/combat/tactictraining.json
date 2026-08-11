@@ -1,0 +1,25 @@
+﻿{
+  "branch": "minecolonies:combat",
+  "effects": [
+    {
+      "minecolonies:effects/blockhutbarracks": 1
+    }
+  ],
+  "icon": "minecolonies:blockhutbarrackstower",
+  "requirements": [
+    {
+      "building": "guardtower",
+      "level": 3
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:lily_of_the_valley"]
+      },
+      "quantity": 4
+    }
+  ],
+  "researchLevel": 1,
+  "sortOrder": 2
+}
+

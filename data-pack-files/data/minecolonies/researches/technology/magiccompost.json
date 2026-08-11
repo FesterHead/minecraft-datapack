@@ -1,0 +1,21 @@
+﻿{
+  "branch": "minecolonies:technology",
+  "effects": [
+    {
+      "minecolonies:effects/farmingmultiplier": 5
+    }
+  ],
+  "icon": "minecolonies:barrel_block",
+  "parentResearch": "minecolonies:technology/fertilizer",
+  "requirements": [
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:cornflower"]
+      },
+      "quantity": 54
+    }
+  ],
+  "researchLevel": 6
+}
+

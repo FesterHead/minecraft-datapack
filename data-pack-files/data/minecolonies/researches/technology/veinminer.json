@@ -1,0 +1,25 @@
+﻿{
+  "branch": "minecolonies:technology",
+  "effects": [
+    {
+      "minecolonies:effects/moreoresmultiplier": 1
+    }
+  ],
+  "icon": "minecraft:iron_block",
+  "parentResearch": "minecolonies:technology/hittingiron",
+  "requirements": [
+    {
+      "building": "miner",
+      "level": 1
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:azure_bluet"]
+      },
+      "quantity": 12
+    }
+  ],
+  "researchLevel": 2
+}
+

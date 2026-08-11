@@ -1,0 +1,25 @@
+﻿{
+  "branch": "minecolonies:combat",
+  "effects": [
+    {
+      "minecolonies:effects/blockattacksmultiplier": 2
+    }
+  ],
+  "icon": "minecraft:barrel",
+  "parentResearch": "minecolonies:combat/squiretraining",
+  "requirements": [
+    {
+      "building": "combatacademy",
+      "level": 4
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:poppy"]
+      },
+      "quantity": 20
+    }
+  ],
+  "researchLevel": 4
+}
+

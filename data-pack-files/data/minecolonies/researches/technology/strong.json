@@ -1,0 +1,25 @@
+﻿{
+  "branch": "minecolonies:technology",
+  "effects": [
+    {
+      "minecolonies:effects/tooldurabilitymultiplier": 1
+    }
+  ],
+  "icon": "minecraft:wooden_pickaxe",
+  "parentResearch": "minecolonies:technology/hittingiron",
+  "requirements": [
+    {
+      "building": "blacksmith",
+      "level": 1
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:azure_bluet"]
+      },
+      "quantity": 18
+    }
+  ],
+  "researchLevel": 2
+}
+

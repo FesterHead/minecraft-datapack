@@ -1,0 +1,25 @@
+﻿{
+  "branch": "minecolonies:civilian",
+  "effects": [
+    {
+      "minecolonies:effects/regenerationmultiplier": 3
+    }
+  ],
+  "icon": "minecolonies:textures/icons/research/regeneration3.png",
+  "parentResearch": "minecolonies:civilian/healingcream",
+  "requirements": [
+    {
+      "building": "library",
+      "level": 4
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:poppy"]
+      },
+      "quantity": 24
+    }
+  ],
+  "researchLevel": 4
+}
+

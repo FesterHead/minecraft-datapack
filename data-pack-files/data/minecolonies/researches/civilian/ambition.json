@@ -1,0 +1,21 @@
+﻿{
+  "branch": "minecolonies:civilian",
+  "effects": [
+    {
+      "minecolonies:effects/blockhutmysticalsite": 1
+    }
+  ],
+  "icon": "minecolonies:blockhutmysticalsite",
+  "requirements": [
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:cornflower"]
+      },
+      "quantity": 10
+    }
+  ],
+  "researchLevel": 1,
+  "sortOrder": 5
+}
+

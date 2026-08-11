@@ -1,0 +1,25 @@
+﻿{
+  "branch": "minecolonies:technology",
+  "effects": [
+    {
+      "minecolonies:effects/blockhutflorist": 1
+    }
+  ],
+  "icon": "minecolonies:blockhutflorist",
+  "parentResearch": "minecolonies:technology/biodegradable",
+  "requirements": [
+    {
+      "building": "composter",
+      "level": 3
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:white_tulip"]
+      },
+      "quantity": 14
+    }
+  ],
+  "researchLevel": 2
+}
+

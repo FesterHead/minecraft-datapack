@@ -1,0 +1,26 @@
+﻿{
+  "branch": "minecolonies:civilian",
+  "effects": [
+    {
+      "minecolonies:effects/vaccines": 1
+    }
+  ],
+  "icon": "minecolonies:textures/icons/research/hp5.png",
+  "parentResearch": "minecolonies:civilian/masks",
+  "requirements": [
+    {
+      "building": "hospital",
+      "level": 3
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:dandelion"]
+      },
+      "quantity": 12
+    }
+  ],
+  "researchLevel": 4,
+  "subtitle": "com.minecolonies.research.civilian.vaccines.subtitle"
+}
+

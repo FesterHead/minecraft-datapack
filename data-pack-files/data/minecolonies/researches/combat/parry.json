@@ -1,0 +1,25 @@
+﻿{
+  "branch": "minecolonies:combat",
+  "effects": [
+    {
+      "minecolonies:effects/meleearmormultiplier": 1
+    }
+  ],
+  "icon": "minecraft:leather_chestplate",
+  "parentResearch": "minecolonies:combat/avoidance",
+  "requirements": [
+    {
+      "building": "smeltery",
+      "level": 1
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:dandelion"]
+      },
+      "quantity": 14
+    }
+  ],
+  "researchLevel": 2
+}
+

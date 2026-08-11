@@ -1,0 +1,25 @@
+﻿{
+  "branch": "minecolonies:combat",
+  "effects": [
+    {
+      "minecolonies:effects/archerdamageaddition": 3
+    }
+  ],
+  "icon": "minecraft:crossbow",
+  "parentResearch": "minecolonies:combat/penetratingshot",
+  "requirements": [
+    {
+      "building": "guardtower",
+      "level": 10
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:pink_tulip"]
+      },
+      "quantity": 16
+    }
+  ],
+  "researchLevel": 4
+}
+

@@ -1,0 +1,21 @@
+﻿{
+  "branch": "minecolonies:civilian",
+  "effects": [
+    {
+      "minecolonies:effects/healingsaturationlimitaddition": 5
+    }
+  ],
+  "icon": "minecraft:experience_bottle",
+  "parentResearch": "minecolonies:civilian/fortitude",
+  "requirements": [
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:blue_orchid"]
+      },
+      "quantity": 54
+    }
+  ],
+  "researchLevel": 6
+}
+

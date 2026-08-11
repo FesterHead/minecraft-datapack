@@ -1,0 +1,22 @@
+﻿{
+  "branch": "minecolonies:technology",
+  "effects": [
+    {
+      "minecolonies:effects/citizeninvslotsaddition": 3
+    }
+  ],
+  "icon": "minecraft:blue_shulker_box",
+  "no-reset": true,
+  "parentResearch": "minecolonies:technology/loaded",
+  "requirements": [
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:cornflower"]
+      },
+      "quantity": 42
+    }
+  ],
+  "researchLevel": 6
+}
+

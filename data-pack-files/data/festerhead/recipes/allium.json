@@ -1,0 +1,17 @@
+﻿{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "d": {
+      "item": "minecraft:dirt"
+    },
+    "s": {
+      "item": "minecraft:wheat_seeds"
+    }
+  },
+  "pattern": ["ddd", "ddd", "dsd"],
+  "result": {
+    "count": 1,
+    "item": "minecraft:allium"
+  }
+}
+

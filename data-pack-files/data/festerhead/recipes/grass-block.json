@@ -1,0 +1,17 @@
+﻿{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "s": {
+      "item": "minecraft:wheat_seeds"
+    },
+    "d": {
+      "item": "minecraft:dirt"
+    }
+  },
+  "pattern": ["sss", "sds", "sss"],
+  "result": {
+    "count": 8,
+    "item": "minecraft:grass_block"
+  }
+}
+

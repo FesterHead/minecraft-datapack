@@ -1,0 +1,25 @@
+﻿{
+  "branch": "minecolonies:technology",
+  "effects": [
+    {
+      "minecolonies:effects/blockhutcomposter": 1
+    }
+  ],
+  "icon": "minecolonies:blockhutcomposter",
+  "requirements": [
+    {
+      "building": "farmer",
+      "level": 3
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:pink_tulip"]
+      },
+      "quantity": 10
+    }
+  ],
+  "researchLevel": 1,
+  "subtitle": "com.minecolonies.research.technology.biodegradable.subtitle"
+}
+

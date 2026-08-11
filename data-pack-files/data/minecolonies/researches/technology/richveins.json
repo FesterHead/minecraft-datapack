@@ -1,0 +1,25 @@
+﻿{
+  "branch": "minecolonies:technology",
+  "effects": [
+    {
+      "minecolonies:effects/moreoresmultiplier": 3
+    }
+  ],
+  "icon": "minecraft:gold_block",
+  "parentResearch": "minecolonies:technology/goodveins",
+  "requirements": [
+    {
+      "building": "blacksmith",
+      "level": 4
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:blue_orchid"]
+      },
+      "quantity": 36
+    }
+  ],
+  "researchLevel": 4
+}
+

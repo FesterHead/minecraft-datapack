@@ -1,0 +1,25 @@
+﻿{
+  "branch": "minecolonies:combat",
+  "effects": [
+    {
+      "minecolonies:effects/meleearmormultiplier": 4
+    }
+  ],
+  "icon": "minecraft:golden_chestplate",
+  "parentResearch": "minecolonies:combat/duelist",
+  "requirements": [
+    {
+      "building": "combatacademy",
+      "level": 5
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:dandelion"]
+      },
+      "quantity": 25
+    }
+  ],
+  "researchLevel": 5
+}
+

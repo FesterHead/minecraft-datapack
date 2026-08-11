@@ -1,0 +1,25 @@
+﻿{
+  "branch": "minecolonies:civilian",
+  "effects": [
+    {
+      "minecolonies:effects/citizencapaddition": 2
+    }
+  ],
+  "icon": "minecolonies:blockhutcitizen:50",
+  "parentResearch": "minecolonies:civilian/keen",
+  "requirements": [
+    {
+      "building": "residence",
+      "level": 4
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:allium"]
+      },
+      "quantity": 6
+    }
+  ],
+  "researchLevel": 2
+}
+

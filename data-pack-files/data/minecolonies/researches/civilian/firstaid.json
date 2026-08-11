@@ -1,0 +1,26 @@
+﻿{
+  "branch": "minecolonies:civilian",
+  "effects": [
+    {
+      "minecolonies:effects/healthaddition": 1
+    }
+  ],
+  "icon": "minecolonies:textures/icons/research/hp1.png",
+  "requirements": [
+    {
+      "building": "townhall",
+      "level": 1
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:lily_of_the_valley"]
+      },
+      "quantity": 9
+    }
+  ],
+  "researchLevel": 1,
+  "sortOrder": 3,
+  "subtitle": "com.minecolonies.research.civilian.firstaid.subtitle"
+}
+

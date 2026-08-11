@@ -1,0 +1,26 @@
+﻿{
+  "branch": "minecolonies:civilian",
+  "effects": [
+    {
+      "minecolonies:effects/walkingmultiplier": 2
+    }
+  ],
+  "icon": "minecolonies:textures/icons/research/speed2.png",
+  "parentResearch": "minecolonies:civilian/nimble",
+  "requirements": [
+    {
+      "building": "townhall",
+      "level": 4
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:pink_tulip"]
+      },
+      "quantity": 20
+    }
+  ],
+  "researchLevel": 4,
+  "subtitle": "com.minecolonies.research.civilian.agile.subtitle"
+}
+

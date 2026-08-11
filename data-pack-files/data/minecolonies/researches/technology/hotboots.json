@@ -1,0 +1,33 @@
+﻿{
+  "branch": "minecolonies:technology",
+  "effects": [
+    {
+      "minecolonies:effects/minerfireresunlock": 1
+    }
+  ],
+  "icon": "minecraft:campfire",
+  "parentResearch": "minecolonies:technology/stringwork",
+  "requirements": [
+    {
+      "building": "fletcher",
+      "level": 1
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:azure_bluet"]
+      },
+      "quantity": 36
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:oxeye_daisy"]
+      },
+      "quantity": 15
+    }
+  ],
+  "researchLevel": 3,
+  "subtitle": "com.minecolonies.research.technology.hotboots.subtitle"
+}
+

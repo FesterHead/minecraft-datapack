@@ -1,0 +1,27 @@
+﻿{
+  "branch": "minecolonies:technology",
+  "effects": [
+    {
+      "minecolonies:effects/fishingtreasure": 1
+    }
+  ],
+  "icon": "minecraft:fishing_rod",
+  "parentResearch": "minecolonies:technology/alchemist",
+  "requirements": [
+    {
+      "building": "fisherman",
+      "level": 4
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": ["minecraft:poppy"]
+      },
+      "quantity": 8
+    }
+  ],
+  "researchLevel": 4,
+  "sortOrder": 4,
+  "subtitle": "com.minecolonies.research.technology.oceanheart.subtitle"
+}
+

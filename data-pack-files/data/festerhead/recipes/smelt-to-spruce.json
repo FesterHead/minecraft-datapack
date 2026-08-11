@@ -1,0 +1,30 @@
+﻿{
+  "type": "minecraft:smelting",
+  "ingredient": [
+    {
+      "item": "minecraft:barrel"
+    },
+    {
+      "item": "minecraft:wooden_axe"
+    },
+    {
+      "item": "minecraft:wooden_hoe"
+    },
+    {
+      "item": "minecraft:wooden_pickaxe"
+    },
+    {
+      "item": "minecraft:wooden_shovel"
+    },
+    {
+      "item": "minecraft:wooden_sword"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "minecraft:spruce_planks"
+  },
+  "experience": 0.1,
+  "cookingtime": 200
+}
+
